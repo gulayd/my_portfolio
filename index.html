@@ -509,6 +509,54 @@
   .vol-title { font-weight: 500; font-size: 14px; margin-bottom: 4px; }
   .vol-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
 
+
+  .development-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .development-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 28px;
+  }
+  .development-date {
+    font-size: 12px;
+    color: var(--ink-muted);
+    margin-bottom: 10px;
+  }
+  .development-title {
+    font-family: var(--serif);
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .development-org {
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .development-desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+
+  .interests-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .interest-pill {
+    font-size: 13px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: white;
+    border: 1px solid var(--border);
+    color: var(--ink-soft);
+  }
+
   footer {
     padding: 60px 0;
     border-top: 1px solid var(--border);
@@ -553,6 +601,7 @@
     .project-card.featured { grid-column: 1; display: block; }
     .exp-item { grid-template-columns: 1fr; gap: 8px; }
     .skills-grid { grid-template-columns: 1fr 1fr; }
+    .development-grid { grid-template-columns: 1fr; }
     .leadership-grid { grid-template-columns: 1fr; }
   }
 
@@ -607,6 +656,7 @@
   <ul class="nav-links">
     <li><a href="#projects" data-en="Projects" data-tr="Projeler">Projects</a></li>
     <li><a href="#experience" data-en="Experience" data-tr="Deneyim">Experience</a></li>
+    <li><a href="#development" data-en="Development" data-tr="Gelişim">Development</a></li>
     <li><a href="#skills" data-en="Skills" data-tr="Beceriler">Skills</a></li>
     <li><a href="#leadership" data-en="Leadership" data-tr="Liderlik">Leadership</a></li>
   </ul>
@@ -616,14 +666,14 @@
   <div class="container">
     <div class="hero-inner">
       <div>
-        <span class="hero-tag" data-en="CS & Finance · Istanbul" data-tr="BM & Finans · İstanbul">CS & Finance · Istanbul</span>
+        <span class="hero-tag" data-en="CS & Finance · BA & Software" data-tr="BM & Finans · İş Analizi & Yazılım">CS & Finance · BA & Software</span>
         <h1 class="hero-name">
           Gülden<br><em>Aydoğan</em>
         </h1>
         <p class="hero-bio"
-          data-en="Computer Science & Engineering graduate from Sabancı University (minor in Finance) with hands-on experience in backend and frontend development, system design, and product-driven projects. I have worked with teams at ASELSAN, Intertech, and TÜBİTAK on real-world applications as well as research involving computer vision and LLM-based solutions. Beyond engineering, I served as Co-President of SUAK, co-founded DUOGAMES, and actively volunteer at MAPUDER and AFAD. I am looking for junior-level, product-focused engineering roles where I can grow technically while building scalable, impactful products."
-          data-tr="Sabancı Üniversitesi Bilgisayar Mühendisliği mezunuyum (Finans yan dalı); backend ve frontend geliştirme, sistem tasarımı ve ürün odaklı projelerde uygulamalı deneyimim var. ASELSAN, Intertech ve TÜBİTAK'ta gerçek dünya uygulamalarının yanı sıra bilgisayarlı görü ve LLM tabanlı araştırmalara katkı sağladım. Mühendisliğin ötesinde SUAK'ta Eş Başkanlık yaptım, DUOGAMES'i kurdum ve MAPUDER ile AFAD'da aktif gönüllü olarak çalışıyorum. Ölçeklenebilir ve etkili ürünler geliştirirken teknik olarak büyüyebileceğim junior seviye, ürün odaklı mühendislik rollerine ilgi duyuyorum.">
-          Computer Science &amp; Engineering graduate from Sabancı University (minor in Finance) with hands-on experience in backend and frontend development, system design, and product-driven projects. I have worked with teams at ASELSAN, Intertech, and TÜBİTAK on real-world applications as well as research involving computer vision and LLM-based solutions. Beyond engineering, I served as Co-President of SUAK, co-founded DUOGAMES, and actively volunteer at MAPUDER and AFAD. I am looking for junior-level, product-focused engineering roles where I can grow technically while building scalable, impactful products.
+          data-en="Computer Science & Engineering graduate from Sabancı University with a minor in Finance. I combine software development and artificial intelligence experience with business analysis, functional testing, product planning, and Agile collaboration. Through roles at TÜBİTAK BİLGEM, ASELSAN, Intertech, and VERIM, I worked on computer vision, LLM-based systems, backend and full-stack applications, and technical communication. I currently co-lead WandForge as Co-Founder & Technical Lead and recently worked as the Business Analyst and Tester of Telco360."
+          data-tr="Sabancı Üniversitesi Bilgisayar Bilimi ve Mühendisliği mezunuyum ve Finans yan dalına sahibim. Yazılım geliştirme ve yapay zeka deneyimimi iş analizi, fonksiyonel test, ürün planlama ve Agile çalışma becerileriyle birleştiriyorum. TÜBİTAK BİLGEM, ASELSAN, Intertech ve VERIM'deki deneyimlerimde bilgisayarlı görü, LLM tabanlı sistemler, backend ve full-stack uygulamalar ile teknik iletişim alanlarında çalıştım. Günümüzde WandForge'da Kurucu Ortak ve Teknik Lider olarak görev alıyor, son olarak Telco360 projesinde İş Analisti ve Tester rolünü üstleniyorum.">
+          Computer Science &amp; Engineering graduate from Sabancı University with a minor in Finance. I combine software development and artificial intelligence experience with business analysis, functional testing, product planning, and Agile collaboration. Through roles at TÜBİTAK BİLGEM, ASELSAN, Intertech, and VERIM, I worked on computer vision, LLM-based systems, backend and full-stack applications, and technical communication. I currently co-lead WandForge as Co-Founder &amp; Technical Lead and recently worked as the Business Analyst and Tester of Telco360.
         </p>
         <div class="hero-links">
           <a href="https://github.com/gulayd" target="_blank" class="btn btn-primary">
@@ -656,7 +706,7 @@
             <div class="stat-label" data-en="Internships & Research" data-tr="Staj & Araştırma">Internships & Research</div>
           </div>
           <div class="stat-card">
-            <div class="stat-num">4</div>
+            <div class="stat-num">5+</div>
             <div class="stat-label" data-en="Notable Projects" data-tr="Öne Çıkan Proje">Notable Projects</div>
           </div>
         </div>
@@ -673,6 +723,36 @@
     <h2 class="section-title fade-in" data-en="Projects I've <em>built</em>" data-tr="Geliştirdiğim <em>projeler</em>">Projects I've <em>built</em></h2>
 
     <div class="projects-grid">
+
+      <div class="project-card featured fade-in">
+        <div>
+          <div class="project-tags">
+            <span class="tag red">Business Analysis</span>
+            <span class="tag">Functional Testing</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">React</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <h3 class="project-title" data-en="Telco360 – Telecom Ticket Management & Analytics" data-tr="Telco360 – Telekom Ticket Yönetimi & Analitik">Telco360 – Telecom Ticket Management &amp; Analytics</h3>
+          <p class="project-desc"
+             data-en="Worked as the Business Analyst and Tester in a five-person team developing an internal telecom ticket management and analytics platform. Prepared requirements, use cases, role-based workflows, acceptance criteria, analysis documentation, and test documentation."
+             data-tr="Beş kişilik ekipte İş Analisti ve Tester olarak dahili telekom ticket yönetimi ve analitik platformu geliştirdim. Gereksinimler, use case'ler, rol bazlı iş akışları, kabul kriterleri, analiz dokümanı ve test dokümanı hazırladım.">
+            Worked as the Business Analyst and Tester in a five-person team developing an internal telecom ticket management and analytics platform. Prepared requirements, use cases, role-based workflows, acceptance criteria, analysis documentation, and test documentation.
+          </p>
+          <a href="https://github.com/pia-ticket-analyze-dev-team" target="_blank" class="project-link">
+            <span data-en="View organization on GitHub" data-tr="GitHub organizasyonunu gör">View organization on GitHub</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div>
+          <p class="project-date" style="margin-bottom:16px">Jul 2026</p>
+          <div style="background:var(--warm-white);border-radius:8px;padding:20px;font-size:13px;color:var(--ink-soft);line-height:1.7;">
+            <strong style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-muted);" data-en="Highlights" data-tr="Öne Çıkanlar">Highlights</strong><br><br>
+            <span data-en="✓ 120 functional test cases created and executed<br>✓ Requirements and acceptance criteria<br>✓ Role-based workflows for three user types<br>✓ Defect reporting and cross-functional collaboration"
+                  data-tr="✓ 120 fonksiyonel test case oluşturuldu ve çalıştırıldı<br>✓ Gereksinimler ve kabul kriterleri<br>✓ Üç kullanıcı tipi için rol bazlı iş akışları<br>✓ Defect raporlama ve ekipler arası iş birliği">✓ 120 functional test cases created and executed<br>✓ Requirements and acceptance criteria<br>✓ Role-based workflows for three user types<br>✓ Defect reporting and cross-functional collaboration</span>
+          </div>
+        </div>
+      </div>
 
       <div class="project-card featured fade-in">
         <div>
@@ -844,6 +924,40 @@
   </div>
 </section>
 
+
+<hr class="divider">
+
+<section id="development">
+  <div class="container">
+    <p class="section-label fade-in" data-en="Professional Development" data-tr="Profesyonel Gelişim">Professional Development</p>
+    <h2 class="section-title fade-in" data-en="Programs & <em>training</em>" data-tr="Programlar & <em>eğitimler</em>">Programs &amp; <em>training</em></h2>
+
+    <div class="development-grid">
+      <div class="development-card fade-in">
+        <div class="development-date">Jun 2026 – Jul 2026</div>
+        <div class="development-title" data-en="Talents in Action – Women in Tech Summer Camp" data-tr="Talents in Action – Women in Tech Yaz Kampı">Talents in Action – Women in Tech Summer Camp</div>
+        <div class="development-org">PiA Group – People in Action</div>
+        <div class="development-desc"
+             data-en="Completed a two-week technology program and contributed as the Business Analyst and Tester of a five-person team through requirements analysis, functional testing, documentation, and the final presentation of Telco360."
+             data-tr="İki haftalık teknoloji programını tamamladım; beş kişilik ekipte Telco360 için gereksinim analizi, fonksiyonel test, dokümantasyon ve final sunumu süreçlerinde İş Analisti ve Tester olarak çalıştım.">
+          Completed a two-week technology program and contributed as the Business Analyst and Tester of a five-person team through requirements analysis, functional testing, documentation, and the final presentation of Telco360.
+        </div>
+      </div>
+
+      <div class="development-card fade-in">
+        <div class="development-date">Jun 2026 – Jul 2026</div>
+        <div class="development-title" data-en="Project Management Professional Development Program" data-tr="Proje Yönetimi Profesyonel Gelişim Programı">Project Management Professional Development Program</div>
+        <div class="development-org">SCA Social</div>
+        <div class="development-desc"
+             data-en="Completed training in strategic project management, SAP PS, artificial intelligence and data science, management and organization, project planning, and documentation."
+             data-tr="Stratejik proje yönetimi, SAP PS, yapay zeka ve veri bilimi, yönetim ve organizasyon, proje planlama ve dokümantasyon eğitimlerini tamamladım.">
+          Completed training in strategic project management, SAP PS, artificial intelligence and data science, management and organization, project planning, and documentation.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <hr class="divider">
 
 <section id="skills">
@@ -852,6 +966,19 @@
     <h2 class="section-title fade-in" data-en="Technical <em>Skills</em>" data-tr="Teknik <em>Beceriler</em>">Technical <em>Skills</em></h2>
 
     <div class="skills-grid">
+      <div class="skill-group fade-in" style="grid-column: 1 / -1">
+        <div class="skill-group-title" data-en="Business Analysis & Testing" data-tr="İş Analizi & Test">Business Analysis &amp; Testing</div>
+        <div class="skill-pills">
+          <span class="skill-pill highlight">Requirements Analysis</span>
+          <span class="skill-pill highlight">Use Cases</span>
+          <span class="skill-pill highlight">Functional Testing</span>
+          <span class="skill-pill">Acceptance Criteria</span>
+          <span class="skill-pill">Process Workflows</span>
+          <span class="skill-pill">Test Case Design</span>
+          <span class="skill-pill">Defect Reporting</span>
+          <span class="skill-pill">Technical Documentation</span>
+        </div>
+      </div>
       <div class="skill-group fade-in">
         <div class="skill-group-title" data-en="Languages" data-tr="Diller">Languages</div>
         <div class="skill-pills">
@@ -859,9 +986,9 @@
           <span class="skill-pill highlight">C++</span>
           <span class="skill-pill highlight">Java</span>
           <span class="skill-pill">SQL</span>
+          <span class="skill-pill">C#</span>
           <span class="skill-pill">JavaScript</span>
           <span class="skill-pill">HTML/CSS</span>
-          <span class="skill-pill">Go · beginner</span>
         </div>
       </div>
       <div class="skill-group fade-in">
@@ -872,6 +999,9 @@
           <span class="skill-pill highlight">React</span>
           <span class="skill-pill">OpenAI API</span>
           <span class="skill-pill">RAG</span>
+          <span class="skill-pill">scikit-learn</span>
+          <span class="skill-pill">OpenCV</span>
+          <span class="skill-pill">Unity</span>
         </div>
       </div>
       <div class="skill-group fade-in">
@@ -884,6 +1014,8 @@
           <span class="skill-pill">Jira</span>
           <span class="skill-pill">Conda</span>
           <span class="skill-pill">Microsoft SQL</span>
+          <span class="skill-pill">PostgreSQL</span>
+          <span class="skill-pill">Swagger</span>
         </div>
       </div>
       <div class="skill-group fade-in" style="grid-column: 1 / -1">
@@ -916,9 +1048,24 @@
 
       <div class="lead-card fade-in">
         <div class="lead-icon">🎮</div>
-        <div class="lead-title" data-en="Co-founder, DUOGAMES" data-tr="Kurucu Ortak, DUOGAMES">Co-founder, DUOGAMES</div>
-        <div class="lead-org">Aug 2023 – Dec 2023</div>
-        <div class="lead-desc" data-en="Co-founded an indie game studio; developed digital games using Unity and C# with a focus on UX design." data-tr="Bağımsız oyun stüdyosu kurdum; UX tasarım odaklı Unity ve C# kullanarak dijital oyunlar geliştirdim.">Co-founded an indie game studio; built games using Unity and C# with UX focus.</div>
+        <div class="lead-title" data-en="Co-Founder & Technical Lead, WandForge" data-tr="Kurucu Ortak & Teknik Lider, WandForge">Co-Founder &amp; Technical Lead, WandForge</div>
+        <div class="lead-org" data-en="Women-led game & education startup · Apr 2026–Present" data-tr="Kadın liderliğinde oyun & eğitim girişimi · Nis 2026–Devam">Women-led game &amp; education startup · Apr 2026–Present</div>
+        <div class="lead-desc"
+             data-en="Contribute to product planning, feature prioritization, technical development, and coordination across software, design, and user experience while building a cozy fantasy match-3 mobile game with Unity and C#."
+             data-tr="Unity ve C# ile cozy fantasy match-3 mobil oyun geliştirirken ürün planlama, özellik önceliklendirme, teknik geliştirme ve yazılım-tasarım-kullanıcı deneyimi koordinasyonuna katkı sağlıyorum.">
+          Contribute to product planning, feature prioritization, technical development, and coordination across software, design, and user experience while building a cozy fantasy match-3 mobile game with Unity and C#.
+        </div>
+      </div>
+
+      <div class="lead-card fade-in">
+        <div class="lead-icon">🧭</div>
+        <div class="lead-title" data-en="Peer Mentor" data-tr="Akran Mentoru">Peer Mentor</div>
+        <div class="lead-org" data-en="Sabancı University · Sep 2024–Dec 2024" data-tr="Sabancı Üniversitesi · Eyl 2024–Ara 2024">Sabancı University · Sep 2024–Dec 2024</div>
+        <div class="lead-desc"
+             data-en="Mentored 10–15 first-year students and supported their academic and social adaptation to university life."
+             data-tr="10–15 birinci sınıf öğrencisine mentorluk yaparak üniversite yaşamına akademik ve sosyal uyumlarını destekledim.">
+          Mentored 10–15 first-year students and supported their academic and social adaptation to university life.
+        </div>
       </div>
 
       <div class="lead-card fade-in">
@@ -942,8 +1089,8 @@
       <div class="volunteer-row fade-in">
         <div class="vol-dot"></div>
         <div>
-          <div class="vol-title" data-en="MAPUDER – Active Member" data-tr="MAPUDER – Aktif Üye">MAPUDER – Active Member</div>
-          <div class="vol-desc" data-en="Contributing to 'Mavi Kütüphane' for earthquake-affected schools (research & sponsorships). Supported orphanage visits and social aid activities." data-tr="Depremden etkilenen okullara yönelik 'Mavi Kütüphane' projesine katkı sağlıyorum (araştırma & sponsorluk). Yurt ziyaretleri ve sosyal yardım faaliyetlerine destek verdim.">Contributing to 'Mavi Kütüphane' for earthquake-affected schools. Supported orphanage visits and social aid.</div>
+          <div class="vol-title" data-en="MAPUDER – Volunteer" data-tr="MAPUDER – Aktif Üye">MAPUDER – Volunteer</div>
+          <div class="vol-desc" data-en="Contributing to 'Mavi Kütüphane' for earthquake-affected schools (research & sponsorships). Supported orphanage visits and social aid activities." data-tr="Depremden etkilenen topluluklara yönelik eğitim ve sosyal destek çalışmalarına katkı sağlıyorum.">Contributing to educational and social support initiatives for earthquake-affected communities.</div>
         </div>
       </div>
       <div class="volunteer-row fade-in">
@@ -964,6 +1111,24 @@
   </div>
 </section>
 
+
+<hr class="divider">
+
+<section id="interests">
+  <div class="container">
+    <p class="section-label fade-in" data-en="Personal Interests" data-tr="İlgi Alanları">Personal Interests</p>
+    <h2 class="section-title fade-in" data-en="What keeps me <em>curious</em>" data-tr="Beni <em>meraklı</em> tutanlar">What keeps me <em>curious</em></h2>
+    <div class="interests-wrap fade-in">
+      <span class="interest-pill" data-en="Artificial Intelligence" data-tr="Yapay Zeka">Artificial Intelligence</span>
+      <span class="interest-pill" data-en="Product Development" data-tr="Ürün Geliştirme">Product Development</span>
+      <span class="interest-pill" data-en="Game Development" data-tr="Oyun Geliştirme">Game Development</span>
+      <span class="interest-pill" data-en="Music Composition & Guitar" data-tr="Müzik Besteleme & Gitar">Music Composition &amp; Guitar</span>
+      <span class="interest-pill" data-en="Traveling" data-tr="Seyahat">Traveling</span>
+      <span class="interest-pill" data-en="Outdoor Activities" data-tr="Açık Hava Aktiviteleri">Outdoor Activities</span>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="container">
     <div class="footer-name">Gülden Aydoğan</div>
@@ -973,7 +1138,7 @@
       <a href="https://www.linkedin.com/in/g%C3%BClden-aydo%C4%9Fan-992295247" target="_blank">LinkedIn</a>
       <a href="https://medium.com/@gulden.aydogan" target="_blank">Medium</a>
     </div>
-    <div class="footer-copy" data-en="Built with care · Istanbul, Turkey" data-tr="Özenle yapıldı · İstanbul, Türkiye">Built with care · Istanbul, Turkey</div>
+    <div class="footer-copy" data-en="Built with care · Istanbul, Türkiye" data-tr="Özenle yapıldı · İstanbul, Türkiye">Built with care · Istanbul, Türkiye</div>
   </div>
 </footer>
 
